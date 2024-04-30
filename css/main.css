@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+:root {
+    --header_one: 32px;
+    --full_width: 100vw; /* 100% of window width */
+    --full_height: 100vh; /* 100% of window height */
+    --bg_site: rgb(219, 209, 198); /* Off white */
+    --bg_input: rgb(255, 175, 62); /* Orange */
+    --bg_submit: rgb(18, 37, 59);
+    --bg_submit_hover: rgb(6, 48, 96);
+}
+
+h3 {
+    font-size: var(--header_one);
+    color: black;
+}
+
+#signup-container {
+    width: var(--full_width);
+    height: var(--full_height);
+    background-color: var(--header_one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--bg_input);
+    border-radius: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px;
+}
+
+#submit {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--bg_site);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+}
+
+#submit:hover {
+    background-color: var(--bg_submit_hover);
+    color: white;
+}
+
+.topPgr {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.lPgr {
+    color: blue;
+}
+
+.lPgr:hover {
+    color: rgb(23, 135, 23);
+}
+
+.form-error {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
